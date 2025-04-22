@@ -1,0 +1,35 @@
+const USERS= 
+[
+    { "name": "Amit", "city": "Delhi", "age": 25, "avatar": "https://i.pravatar.cc/150?img=1" },
+    { "name": "Priya", "city": "Mumbai", "age": 22, "avatar": "https://i.pravatar.cc/150?img=2" },
+    { "name": "Rahul", "city": "Delhi", "age": 28, "avatar": "https://i.pravatar.cc/150?img=3" },
+    { "name": "Sneha", "city": "Bangalore", "age": 24, "avatar": "https://i.pravatar.cc/150?img=4" },
+    { "name": "Vikram", "city": "Hyderabad", "age": 29, "avatar": "https://i.pravatar.cc/150?img=5" },
+    { "name": "Kiran", "city": "Chennai", "age": 21, "avatar": "https://i.pravatar.cc/150?img=6" },
+    { "name": "Anjali", "city": "Delhi", "age": 23, "avatar": "https://i.pravatar.cc/150?img=7" },
+    { "name": "Rohit", "city": "Kolkata", "age": 26, "avatar": "https://i.pravatar.cc/150?img=8" },
+    { "name": "Pooja", "city": "Mumbai", "age": 27, "avatar": "https://i.pravatar.cc/150?img=9" },
+    { "name": "Suresh", "city": "Pune", "age": 30, "avatar": "https://i.pravatar.cc/150?img=10" },
+    { "name": "Divya", "city": "Ahmedabad", "age": 22, "avatar": "https://i.pravatar.cc/150?img=11" },
+    { "name": "Arjun", "city": "Delhi", "age": 24, "avatar": "https://i.pravatar.cc/150?img=12" },
+    { "name": "Meena", "city": "Bangalore", "age": 25, "avatar": "https://i.pravatar.cc/150?img=13" },
+    { "name": "Harsh", "city": "Mumbai", "age": 23, "avatar": "https://i.pravatar.cc/150?img=14" },
+    { "name": "Neha", "city": "Chennai", "age": 26, "avatar": "https://i.pravatar.cc/150?img=15" },
+    { "name": "Sanjay", "city": "Hyderabad", "age": 28, "avatar": "https://i.pravatar.cc/150?img=16" },
+    { "name": "Ritika", "city": "Delhi", "age": 21, "avatar": "https://i.pravatar.cc/150?img=17" },
+    { "name": "Ajay", "city": "Kolkata", "age": 29, "avatar": "https://i.pravatar.cc/150?img=18" },
+    { "name": "Simran", "city": "Pune", "age": 22, "avatar": "https://i.pravatar.cc/150?img=19" },
+    { "name": "Raj", "city": "Ahmedabad", "age": 27, "avatar": "https://i.pravatar.cc/150?img=20" },
+    { "name": "Deepika", "city": "Mumbai", "age": 24, "avatar": "https://i.pravatar.cc/150?img=21" },
+    { "name": "Nikhil", "city": "Delhi", "age": 23, "avatar": "https://i.pravatar.cc/150?img=22" },
+    { "name": "Isha", "city": "Bangalore", "age": 26, "avatar": "https://i.pravatar.cc/150?img=23" },
+    { "name": "Manish", "city": "Chennai", "age": 25, "avatar": "https://i.pravatar.cc/150?img=24" },
+    { "name": "Kavita", "city": "Hyderabad", "age": 28, "avatar": "https://i.pravatar.cc/150?img=25" },
+    { "name": "Tarun", "city": "Pune", "age": 24, "avatar": "https://i.pravatar.cc/150?img=26" },
+    { "name": "Shreya", "city": "Mumbai", "age": 22, "avatar": "https://i.pravatar.cc/150?img=27" },
+    { "name": "Ravi", "city": "Kolkata", "age": 30, "avatar": "https://i.pravatar.cc/150?img=28" },
+    { "name": "Bhavna", "city": "Delhi", "age": 21, "avatar": "https://i.pravatar.cc/150?img=29" },
+    { "name": "Yash", "city": "Ahmedabad", "age": 27, "avatar": "https://i.pravatar.cc/150?img=30" }
+  ]
+
+  export {USERS};
