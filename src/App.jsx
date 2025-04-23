@@ -69,7 +69,34 @@ useEffect(() => {
       onChange={(e) => setSearchText(e.target.value.toLocaleLowerCase())}
       />
 
-      
+      {searchText ? (
+        <p className="text-center mt-1">
+          {filteredUsers.length === 0
+          ? "Oops! No users found,.. Try another search...": `Found ${filteredUsers.length} users for search result...`}
+        </p>
+      ) :null}
+
+      <div className="flex justify-around">
+        <div>
+          <span>Filter By City: </span>
+          <select
+          className="bg-white text-lg my-2 rounded-lg px-5"
+          value={filterCity}
+          onChange={(e) => setFilterCity(e.target.value)}
+          >
+            <option value = "">All</option>
+            {USERS.map((user) => {
+              return (
+                <option key={user.city} value={user.city}></option>
+              );
+            })}
+            </select>
+        </div>
+
+        <div>
+          <span>Filter By Age: </span>
+        </div>
+      </div>
     </div>
   )
 }
