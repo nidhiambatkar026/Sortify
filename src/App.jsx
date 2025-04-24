@@ -53,8 +53,19 @@ useEffect(() => {
 
     setFilteredUsers(tempFilteredUsers);
   }, [filterCity, filterAge]);
-  
 
+  useEffect(() => {
+    const tempSortedUsers = filteredUsers.sort((a,b) => {
+      if (sortOrder === "asc"){
+        return a.name.localeCompare(b.name)
+      } else{
+        return b.name.localeCompare(a.name);
+      }
+    });
+
+    setFilteredUsers([...tempSortedUsers]);
+  }, [sortOrder, filteredUsers]);
+  
   return (
     <div className="bg-slate-100 min-h-screen">
       <h1 className="text-center text-blue-500 text-4xl font-bold py-5">
@@ -106,9 +117,32 @@ useEffect(() => {
                 </option>
               );
               })}
-
           </select>
         </div>
+        
+        <div>
+          <span>Sort By Name: </span>
+          <select 
+          className="bg-white text-lg my-2 rounded-lg px-5"
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.nodeValue)}
+          >
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap justify-around mt-10">
+        {filteredUsers.map((userData, index) => {
+          const { name, city, age, avatar } =userData;
+
+          return (
+            <div
+            className="bg-white shadow-lg mb-5 mx-6 px-5 py-2 rounded-lg w0[400px] flex"
+            key={index}>
+          )
+        })}
       </div>
     </div>
   )
