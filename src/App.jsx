@@ -95,6 +95,19 @@ useEffect(() => {
 
         <div>
           <span>Filter By Age: </span>
+          <select 
+          className="bg-white text-lg my-2 rounded-lg px-5"
+          value={filterAge}
+          onChange={(e) => setFilterAge(e.target.value)}>
+            <option value ="">All</option>
+            {USERS.map((user) => {
+              return (
+                <option key={user.age} value={user.age}>{user.age}
+                </option>
+              );
+              })}
+
+          </select>
         </div>
       </div>
     </div>
